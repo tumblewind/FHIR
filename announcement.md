@@ -12,9 +12,9 @@ permalink: /announcement/
 Welcome to the IBM implementation of the HL7 FHIR R4 specification. This project builds on our experience developing, operating, and maintaining a commercial-grade DSTU2 server implementation. Our goal is to provide a robust and performant R4 implementation that is suitable for production with minimal configuration; yet customizable for a wide range of use cases. In this article, we give you insight into the work that went into upgrading our server implementation for FHIR R4: 
 <div class="list-unstyled">
 
-- Regenerating the model for R4 and refactoring the remaining code
-- Validating and improving the conformance with the specification
-- Evaluating the performance characteristics of the key components
+    - Regenerating the model for R4 and refactoring the remaining code
+    - Validating and improving the conformance with the specification
+    - Evaluating the performance characteristics of the key components
 
 </div>
 
