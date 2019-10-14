@@ -42,11 +42,11 @@ Response time metrics are collected and collated into a simple report at the end
 
 |         |  REQS  |  MAX(ms)  | AVG(ms) | 95TH(ms) | CALLS/s |
 | ------  | ------ | --------- | ------- | -------  | ------- |  
-| PARSE   | 3848   | 1782      | 5       | 11       | 36.2    |
-| VALIDATE| 3636   | 505       | 3       | 12       | 34.2    |
-| CREATE  | 3601   | 1219      | 56      | 164      | 33.9    |
-| READ    | 7202   | 423       | 24      | 60       | 67.8    |
-| PROCESS | 3601   | 1504      | 109     | 291      | 33.9    | 
+|PARSE    | 3848   | 1782      | 5       | 11       | 36.2    |
+|VALIDATE | 3636   | 505       | 3       | 12       | 34.2    |
+|CREATE   | 3601   | 1219      | 56      | 164      | 33.9    |
+|READ     | 7202   | 423       | 24      | 60       | 67.8    |
+|PROCESS  | 3601   | 1504      | 109     | 291      | 33.9    | 
 
 </div>
 </div>
