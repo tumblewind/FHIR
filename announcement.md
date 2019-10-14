@@ -2,18 +2,21 @@
 layout: post
 title:  "Announcement"
 date:   2019-10-08 09:59:05 -0400
-#categories: jekyll update
 permalink: /announcement/
 ---
+<div class="container">
+  <div class="row">
 
 # Introduction to the IBM FHIR Server
 
-
 Welcome to the IBM implementation of the HL7 FHIR R4 specification. This project builds on our experience developing, operating, and maintaining a commercial-grade DSTU2 server implementation. Our goal is to provide a robust and performant R4 implementation that is suitable for production with minimal configuration; yet customizable for a wide range of use cases. In this article, we give you insight into the work that went into upgrading our server implementation for FHIR R4: 
+<div class="list-unstyled">
+
 - Regenerating the model for R4 and refactoring the remaining code
 - Validating and improving the conformance with the specification
-- Evaluating the performance characteristics of the key components.
+- Evaluating the performance characteristics of the key components
 
+</div>
 
 The FHIR model component is the core of the server implementation. It provides Java APIs for parsing, building, generating, and validating FHIR resources.  The Java model classes that represent FHIR resources and data types are generated directly from the structure definitions distributed with the specification. The IBM FHIR Server model objects differ from the Java reference implementation in that each model class implements the Java builder pattern (Effective Java, Joshua Bloch) for thread-safety and performance and the visitor pattern (GoF) to enable simple traversal logic (used internally for serialization, data copying, and more). All date/time processing is done using the Java 8 time library and the model classes implement Java equals, hashCode, and toString methods.
 
@@ -33,6 +36,9 @@ The IBM FHIR Server combines examples from the FHIR specification with samples f
 
 
 Response time metrics are collected and collated into a simple report at the end of the run:
+<div class="table-responsive">
+<div class=
+"table table-sm table-striped table-light table-bordered">
 
 |         |  REQS  |  MAX(ms)  | AVG(ms) | 95TH(ms) | CALLS/s |
 | ------  | ------ | --------- | ------- | -------  | ------- |  
@@ -42,6 +48,8 @@ Response time metrics are collected and collated into a simple report at the end
 | READ    | 7202   | 423       | 24      | 60       | 67.8    |
 | PROCESS | 3601   | 1504      | 109     | 291      | 33.9    | 
 
+</div>
+</div>
 
 In the above run, all components (test driver, IBM FHIR Server and Derby database) were run locally on a mid-2015 MacBook Pro (2.5 GHz Intel Core i7, 16GB). Note that the client is also parsing and validating every resource it processes before submitting the request to the FHIR server.
 
@@ -49,3 +57,6 @@ In the above run, all components (test driver, IBM FHIR Server and Derby databas
 We invite developers across health IT to leverage this server implementation to turbo-charge their adoption of FHIR R4, enhance data interoperability, and to collaborate with us on shaping the future of this project at https://github.com/ibm/fhir.
 
 [(100% on Basic and 89% on Advanced)]: <https://touchstone.aegis.net/touchstone/analytics/published?month=201909&spec=FHIR%204.0.0&pa=HL7_FHIR_SERVER&testSystem=5d5e96a10a120e7f08942098&supportedOnly=true&cb=/HL7_FHIR_4_0_0>
+
+</div>
+</div>
