@@ -5,7 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=a7d6aa6c5ba1691fd9c711605244bb854185ac6e">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=5b891bec8b6de74260a4118a41da460f5d3d04be">
 
 <!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>Announcement | IBM FHIR Server</title>
@@ -111,9 +111,9 @@
 <h1 id="introduction-to-the-ibm-fhir-server">Introduction to the IBM FHIR Server</h1>
 <p>Welcome to the IBM implementation of the HL7 FHIR R4 specification. This project builds on our experience developing, operating, and maintaining a commercial-grade DSTU2 server implementation. Our goal is to provide a robust and performant R4 implementation that is suitable for production with minimal configuration; yet customizable for a wide range of use cases. In this article, we give you insight into the work that went into upgrading our server implementation for FHIR R4: </p>
 <div class="container list-unstyled">
-<pre><code>- Regenerating the model for R4 and refactoring the remaining code
-- Validating and improving the conformance with the specification
-- Evaluating the performance characteristics of the key components
+<pre><code>    - Regenerating the model for R4 and refactoring the remaining code
+    - Validating and improving the conformance with the specification
+    - Evaluating the performance characteristics of the key components
 </code></pre>
 </div>
 <p>The FHIR model component is the core of the server implementation. It provides Java APIs for parsing, building, generating, and validating FHIR resources.  The Java model classes that represent FHIR resources and data types are generated directly from the structure definitions distributed with the specification. The IBM FHIR Server model objects differ from the Java reference implementation in that each model class implements the Java builder pattern (Effective Java, Joshua Bloch) for thread-safety and performance and the visitor pattern (GoF) to enable simple traversal logic (used internally for serialization, data copying, and more). All date/time processing is done using the Java 8 time library and the model classes implement Java equals, hashCode, and toString methods.</p>
@@ -147,7 +147,7 @@
 <td>36.2</td>
 </tr>
 <tr>
-<td> VALIDATE</td>
+<td>VALIDATE</td>
 <td>3636  </td>
 <td> 505       </td>
 <td>3       </td>
@@ -171,7 +171,7 @@
 <td>67.8</td>
 </tr>
 <tr>
-<td> PROCESS </td>
+<td>PROCESS </td>
 <td>3601  </td>
 <td>1504   </td>
 <td>109     </td>

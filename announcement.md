@@ -12,9 +12,9 @@ permalink: /announcement/
 Welcome to the IBM implementation of the HL7 FHIR R4 specification. This project builds on our experience developing, operating, and maintaining a commercial-grade DSTU2 server implementation. Our goal is to provide a robust and performant R4 implementation that is suitable for production with minimal configuration; yet customizable for a wide range of use cases. In this article, we give you insight into the work that went into upgrading our server implementation for FHIR R4: 
 <div class="container list-unstyled">
 
-    - Regenerating the model for R4 and refactoring the remaining code
-    - Validating and improving the conformance with the specification
-    - Evaluating the performance characteristics of the key components
+        - Regenerating the model for R4 and refactoring the remaining code
+        - Validating and improving the conformance with the specification
+        - Evaluating the performance characteristics of the key components
 
 </div>
 
@@ -43,10 +43,10 @@ Response time metrics are collected and collated into a simple report at the end
 |         |  REQS  |  MAX(ms)  | AVG(ms) | 95TH(ms) | CALLS/s |
 | ------  | ------ | --------- | ------- | -------  | ------- |  
 | PARSE   | 3848   | 1782      | 5       | 11       | 36.2    |
-| VALIDATE| 3636   | 505       | 3       | 12       | 34.2    |
+| VALIDATE| 3636   | 505       | 3       | 12       | 34.2    |
 | CREATE  | 3601   | 1219      | 56      | 164      | 33.9    |
 | READ    | 7202   | 423       | 24      | 60       | 67.8    |
-| PROCESS | 3601   | 1504      | 109     | 291      | 33.9    | 
+| PROCESS | 3601   | 1504      | 109     | 291      | 33.9    | 
 
 </div>
 </div>
