@@ -1,0 +1,19 @@
+- title: Announcement
+  pages:
+    - path: /announcement
+- title: Conformance
+  pages:
+    - path: /conformance
+- title: Contributing
+  pages:
+    - path: /contributing
+- title: Guides
+  pages:
+    - title: Configuration
+      path: /guides/configuration
+    - title: Shadowing
+      path: /guides/shadowing
+    - title: Styling
+      path: /guides/styling
+    - title: Navigation
+      path: /guides/navigation/sidebar
