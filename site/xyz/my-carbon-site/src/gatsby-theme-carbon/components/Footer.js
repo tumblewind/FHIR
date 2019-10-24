@@ -4,7 +4,7 @@ import Footer from 'gatsby-theme-carbon/src/components/Footer';
 const Content = () => (
   <>
     <p>
-      The IBM FHIR Server is licensed under the Apache 2.0 license. Full license text is available at LICENSE.
+      The IBM FHIR Server is licensed under the Apache 2.0 license. Full license text is available at <a href="/license">LICENSE</a>.
     </p>
     <p>
       <a href="https://www.hl7.org/fhir/index.html">

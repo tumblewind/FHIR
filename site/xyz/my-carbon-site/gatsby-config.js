@@ -3,6 +3,7 @@ module.exports = {
     title: 'IBM FHIR Server',
     description: 'The IBM FHIR Server is a modular Java implementation of version 4 of the HL7 FHIR specification with a focus on performance and configurability.',
     keywords: 'ibm,fhir,server',
+    siteUrl: 'https://ibm.github.io/FHIR/'
   },
   pathPrefix: '/FHIR',
   plugins: [
@@ -29,7 +30,38 @@ module.exports = {
         theme_color: '#0062ff',
         display: 'browser',
       },
+    },
+    {
+    resolve: 'gatsby-plugin-sitemap',
+    options: {
+      output: '/sitemap.xml',
+      exclude: ["/build/", ],
+      query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+
+          allSitePage {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+      }`,
+      serialize: ({ site, allSitePage }) =>
+        allSitePage.edges.map(edge => {
+          return {
+            url: site.siteMetadata.siteUrl + edge.node.path,
+            changefreq: 'daily',
+            priority: 0.7,
+          }
+        })
     }
+  },
   ],
   mapping: {
     "MarkdownRemark.frontmatter.author": `AuthorYaml`,

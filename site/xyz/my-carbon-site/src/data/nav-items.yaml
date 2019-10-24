@@ -4,16 +4,21 @@
 - title: Conformance
   pages:
     - path: /conformance
+- title: Change Log
+  pages:
+    - path: /changelog
+- title: Blog
+  pages: 
+     - title: Announcement
+       path: /announcement
+     - title: FHIR Server on Raspberry Pi
+       path: /blog/raspberrypi4howto
+- title: Guides
+  pages:
+    - title: IBM FHIR Server User's Guide
+      path: /guides/fhirserverusersguide
+    - title: DB2 On Cloud
+      path: /guides/db2oncloudsetup
 - title: Contributing
   pages:
     - path: /contributing
-- title: Guides
-  pages:
-    - title: Configuration
-      path: /guides/configuration
-    - title: Shadowing
-      path: /guides/shadowing
-    - title: Styling
-      path: /guides/styling
-    - title: Navigation
-      path: /guides/navigation/sidebar

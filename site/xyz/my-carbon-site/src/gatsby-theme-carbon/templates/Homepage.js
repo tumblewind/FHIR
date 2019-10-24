@@ -1,5 +1,6 @@
 import React from 'react';
-import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
+import { HomepageCallout, HomepageBanner } from 'gatsby-theme-carbon';
+
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
 import { calloutLink } from './Homepage.module.scss';
 
@@ -11,10 +12,11 @@ const FirstRightText = () => (
   </p>
 );
 
-const BannerText = () => <h1>IBM FHIR Server</h1>;
+
+const BannerText = () => "";
 
 const customProps = {
-  Banner: <HomepageBanner renderText={BannerText}  />,
+  Banner: <HomepageBanner renderText={BannerText} />,
   FirstCallout: (
     <HomepageCallout
       backgroundColor="#030303"
