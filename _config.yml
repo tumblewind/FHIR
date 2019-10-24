@@ -61,7 +61,7 @@ markdown: GFM
 include:
   - CONTRIBUTING.md
   - README.md  
-  - _posts/index.md
+  - site/xyz/my-carbon-site/public
 
 gems: 
   - jekyll-redirect-from
