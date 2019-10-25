@@ -1,1 +1,0 @@
-Sitemap: https://ibm.github.io/fhir/sitemap.xml
