@@ -3,10 +3,10 @@
 <url> <loc>https://ibm.github.io/FHIR/announcement/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ibm.github.io/FHIR/changelog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ibm.github.io/FHIR/contributing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ibm.github.io/FHIR/getting-started/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ibm.github.io/FHIR/guides/configuration/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ibm.github.io/FHIR/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ibm.github.io/FHIR/getting-started/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ibm.github.io/FHIR/releases/4.0.0/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ibm.github.io/FHIR/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ibm.github.io/FHIR/blog/raspberrypi4howto/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ibm.github.io/FHIR/conformance/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ibm.github.io/FHIR/guides/db2oncloudsetup/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
