@@ -7,6 +7,7 @@ module.exports = {
   },
   pathPrefix: '/FHIR',
   plugins: [
+    "gatsby-plugin-slug",
     {
       resolve : 'gatsby-theme-carbon', 
       options : { 
