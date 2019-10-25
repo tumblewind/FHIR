@@ -13,8 +13,8 @@ plugins:
   - jekyll-github-metadata
   - jekyll-sitemap
 
-source: ./public/ 
-destination: _site
+source: ./_site/ 
+destination: ./_site/
 show_drafts: false
 future: false
 
