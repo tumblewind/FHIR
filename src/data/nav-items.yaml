@@ -6,7 +6,7 @@
     - path: /FHIR/conformance
 - title: Change Log
   pages:
-    - path: /changelog
+    - path: /FHIR/changelog
 - title: Blog
   pages: 
      - title: Announcement
