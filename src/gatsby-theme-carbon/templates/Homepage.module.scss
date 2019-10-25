@@ -11,5 +11,5 @@
 
 // Remove the Slide Out 
 [class*='bx--header__action'] {
-  display: none;
+  visibility: hidden;
 }
