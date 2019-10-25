@@ -1,9 +1,9 @@
 import React from 'react';
 import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLinks';
 
-
 // Figure out how to add [![Build
 // Status](https://travis-ci.com/IBM/FHIR.svg?branch=master)](https://travis-ci.com/IBM/FHIR)
+// [![Actions Status](https://github.com/IBM/FHIR/workflows/CI/badge.svg)](https://github.com/IBM/FHIR/actions)
 const links = [
   {
     title: 'GitHub: Source',

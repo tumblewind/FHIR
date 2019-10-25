@@ -4,6 +4,12 @@ import Footer from 'gatsby-theme-carbon/src/components/Footer';
 const Content = () => (
   <>
     <p>
+      <a href="https://travis-ci.com/IBM/FHIR">Integration<img src="https://github.com/IBM/FHIR/workflows/CI/badge.svg" alt="Build Status"></img></a>
+    </p>
+    <p>
+      <a href="https://github.com/IBM/FHIR/actions">Pre-Integration<img src="https://travis-ci.com/IBM/FHIR.svg?branch=master" alt="Build Status"></img></a>
+    </p>
+    <p>
       The IBM FHIR Server is licensed under the Apache 2.0 license. Full license text is available at <a href="/license">LICENSE</a>.
     </p>
     <p>
