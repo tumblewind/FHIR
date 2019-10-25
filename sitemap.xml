@@ -3,8 +3,8 @@
 <url> <loc>https://ibm.github.io/FHIR/FHIR/announcement/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ibm.github.io/FHIR/FHIR/changelog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ibm.github.io/FHIR/FHIR/contributing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ibm.github.io/FHIR/FHIR/getting-started/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ibm.github.io/FHIR/FHIR/guides/configuration/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ibm.github.io/FHIR/FHIR/getting-started/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ibm.github.io/FHIR/FHIR/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ibm.github.io/FHIR/FHIR/releases/4.0.0/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ibm.github.io/FHIR/FHIR/blog/raspberrypi4howto/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
