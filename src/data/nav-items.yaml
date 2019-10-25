@@ -1,24 +1,24 @@
 - title: Announcement
   pages:
-    - path: /announcement
+    - path: /FHIR/announcement
 - title: Conformance
   pages:
-    - path: /conformance
+    - path: /FHIR/conformance
 - title: Change Log
   pages:
     - path: /changelog
 - title: Blog
   pages: 
      - title: Announcement
-       path: /announcement
+       path: /FHIR/announcement
      - title: FHIR Server on Raspberry Pi
-       path: /blog/raspberrypi4howto
+       path: /FHIR/blog/raspberrypi4howto
 - title: Guides
   pages:
     - title: IBM FHIR Server User's Guide
-      path: /guides/fhirserverusersguide
+      path: /FHIR/guides/fhirserverusersguide
     - title: DB2 On Cloud
-      path: /guides/db2oncloudsetup
+      path: /FHIR/guides/db2oncloudsetup
 - title: Contributing
   pages:
-    - path: /contributing
+    - path: /FHIR/contributing
