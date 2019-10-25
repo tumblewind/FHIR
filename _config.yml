@@ -14,7 +14,7 @@ plugins:
   - jekyll-sitemap
 
 source: ./public/ 
-destination: ./public/
+destination: _site
 show_drafts: false
 future: false
 
