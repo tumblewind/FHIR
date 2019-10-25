@@ -28,7 +28,8 @@ relative_links:
   collections: false
 
 include:
-  - public
-  - _site
+  - public/
+  - _site/
+  - index.html
 
 repository: IBM/FHIR
