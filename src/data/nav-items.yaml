@@ -4,13 +4,8 @@
 - title: Conformance
   pages:
     - path: /FHIR/conformance
-- title: Change Log
-  pages:
-    - path: /FHIR/changelog
 - title: Blog
   pages: 
-     - title: Announcement
-       path: /FHIR/announcement
      - title: FHIR Server on Raspberry Pi
        path: /FHIR/blog/raspberrypi4howto
 - title: Guides

@@ -2,8 +2,13 @@ import React from 'react';
 import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLinks';
 
 
-// Figure out how to add [![Build Status](https://travis-ci.com/IBM/FHIR.svg?branch=master)](https://travis-ci.com/IBM/FHIR)
+// Figure out how to add [![Build
+// Status](https://travis-ci.com/IBM/FHIR.svg?branch=master)](https://travis-ci.com/IBM/FHIR)
 const links = [
+  {
+    title: 'GitHub: Releases',
+    href: 'https://github.com/ibm/fhir/releases',
+  },
   {
     title: 'GitHub: Source',
     href: 'https://github.com/IBM/FHIR/',
@@ -11,6 +16,10 @@ const links = [
   {
     title: 'GitHub: Issues',
     href: 'https://github.com/IBM/FHIR/issues',
+  },
+  {
+    title: 'BinTray: Snapshots',
+    href: 'https://bintray.com/ibm-watson-health/ibm-fhir-server-snapshots',
   },
   {
     title: 'HL7 FHIR',
