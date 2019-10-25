@@ -29,5 +29,6 @@ relative_links:
 
 include:
   - public
+  - _site
 
 repository: IBM/FHIR
