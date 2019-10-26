@@ -20,7 +20,7 @@
     - title: Creating the fhir-validation assembly
       path: /guides/CreateFHIRValidationAssembly
     - title: Configuring IBM FHIR Server Search
-      path: /guides/CreateFHIRValidationAssembly 
+      path: /guides/FHIRSearchConfiguration 
     - title: DB2 Guide
       path: /guides/DB2OnCloudSetup
 - title: Tips and Tricks
