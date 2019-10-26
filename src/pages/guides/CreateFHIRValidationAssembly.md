@@ -44,7 +44,7 @@ You should see `[INFO] BUILD SUCCESS`, and the assembly is ready.
 This file contains: 
  
 
-<code>
+``` shell
   Length      Date    Time    Name
 ---------  ---------- -----   ----
         0  10-09-2019 14:18   fhir-validation-dist/
@@ -57,7 +57,7 @@ This file contains:
    214788  09-06-2019 15:58   fhir-validation-dist/commons-io-2.6.jar
 ---------                     -------
  52769970                     13 files
-</code>
+```
 
 <p>
 FHIR® is the registered trademark of HL7 and is used with the permission of HL7.
