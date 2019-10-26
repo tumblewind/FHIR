@@ -13,3 +13,12 @@
 [class*='bx--header__action'] {
   visibility: hidden;
 }
+
+// Expand visibile area
+[class*='bx--grid'] {
+  max-width: 80%;
+}
+
+[class*='bx--col-lg-12'] {
+  max-width: 80%;
+}
