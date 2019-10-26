@@ -25,7 +25,7 @@
       path: /guides/DB2OnCloudSetup
 - title: Tips and Tricks
   pages:
-    - path: /contributing
+    - path: /TipsAndTricks
 - title: Contributing
   pages:
     - path: /contributing
