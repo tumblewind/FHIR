@@ -7,7 +7,7 @@ const Content = () => (
       <a href="https://travis-ci.com/IBM/FHIR"><img src="https://travis-ci.com/IBM/FHIR.svg?branch=master" alt="Build Status"></img></a>
     </p>
     <p>
-      The IBM FHIR Server is licensed under the Apache 2.0 license. Full license text is available at <a href="/LICENSE">LICENSE</a>.
+      The IBM FHIR Server is licensed under the Apache 2.0 license. Full license text is available at <a href="https://ibm.github.io/FHIR/LICENSE">LICENSE</a>.
     </p>
     <p>
       <a href="https://www.hl7.org/fhir/index.html">
