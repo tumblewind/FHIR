@@ -12,7 +12,6 @@ const FirstRightText = () => (
   </p>
 );
 
-
 const BannerText = () => "";
 
 const customProps = {
