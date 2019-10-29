@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{351:function(e,n,t){"use strict";t.r(n);var r=t(2),o=(t(1),t(170)),a=[{href:"/",text:"IBM FHIR Server Homepage"}];n.default=function(){return Object(r.b)(o.a,{links:a})}}}]);
-//# sourceMappingURL=component---src-pages-404-js-06d22ad3b46edf58f61a.js.map

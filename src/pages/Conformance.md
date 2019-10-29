@@ -12,10 +12,21 @@ The IBM FHIR Server aims to be a conformant implementation of the HL7 FHIR speci
 ## Capability statement
 The HL7 FHIR specification defines [an interaction](https://www.hl7.org/fhir/R4/http.html#capabilities) for retrieving a machine-readable description of the server's capabilities via the `[base]/metadata` endpoint. The IBM FHIR Server implements this interaction and generates a `CapabilityStatement` resource based on the current server configuration. While the `CapabilityStatement` resource is ideal for certain uses, this markdown document provides a human-readable summary of important details, with a special focus on limitations of the current implementation and deviations from the specification.
 
+The IBM FHIR Server supports only version 4.0.0 of the specification and presently has no support for the MIME-type parameter `fhirVersion`.
+
 ## FHIR HTTP API
-The HL7 FHIR specification is more than just a data format. It defines an [HTTP API](https://www.hl7.org/fhir/R4/http.html) for creating, reading, updating, deleting, and searching over FHIR resources. The IBM FHIR Server implements the full API for every resource defined in the specification, with the following exceptions:
+The HL7 FHIR specification is more than just a data format. It defines an [HTTP API](https://www.hl7.org/fhir/R4/http.html) for creating, reading, updating, deleting, and searching over FHIR resources. The IBM FHIR Server implements almost the full API for every resource defined in the specification, with the following exceptions:
 * history is only supported at the resource instance level (no resource type history and no whole-system history)
 * there are parts of the FHIR search specification which are not fully implemented as documented in the following section
+
+The IBM FHIR Server implements a linear versioning scheme for resources and fully implements the `vread` and `history` interactions, as well as version-aware updates.
+
+### General parameters
+The `_format` parameter is supported and provides a useful mechanism for requesting a specific format (`XML` or `JSON`) in requests made from a browser. In the absence of either an `Accept` header or a `_format` query parameter, the server defaults to `application/fhir+json`.
+
+The `_pretty` parameter is not currently supported, but should be added as part of https://github.com/IBM/FHIR/issues/269.
+
+The `_summary` and `_elements` parameters are supported on the search interaction as documented.
 
 ## Search
 The IBM FHIR Server supports search parameters of type `Number`, `Date/DateTime`, `String`, `Token`, `Reference`, `Quantity`, and `URI`.
@@ -31,12 +42,12 @@ Search parameters defined in the specification can be found by browsing the R4 F
 In addition, the following search parameters are supported on all resources:
 * `_id`
 * `_lastUpdated`
+* `_tag`
 * `_profile`
 * `_security`
 * `_source`
-* `_tag`
 
-The `_content`, `_query`, and `_text` parameters are not supported at this time.
+The `_text`, `_content`, `_list`, `_has`, `_type`, `_query`, and `_filter` parameters are not supported at this time.
 
 Finally, the specification defines a set of <q>Search result parameters</q> for controlling the search behavior. The IBM FHIR Server supports the following:
 * `_sort`
@@ -47,6 +58,8 @@ Finally, the specification defines a set of <q>Search result parameters</q> for 
 * `_elements`
 
 The `_count` parameter can be used to return at most 1000 records. If the client specifies a `_count` of over 1000, the page size is capped at 1000. If the client specifies a `_count` of 1000 or less, the server honors the client request.
+
+The `:iterate` modifier is not supported for the `_include` parameter (or any other).
 
 The `_total`, `_contained`, and `_containedType` parameters are not supported at this time.
 
@@ -62,7 +75,7 @@ FHIR search modifiers are described at https://www.hl7.org/fhir/R4/search.html#m
 |--------------------------|-------------------|-----------------------------------------------------|
 |String                 |`:exact`,`:contains`,`:missing` |Performs a "starts with" search that is case-insensitive and accent-insensitive|
 |Reference              |`:[type]`,`:missing`            |Performs an exact match search|
-|URI                    |`:below`,`:missing`             |Performs a "starts with" search|
+|URI                    |`:below`,`:missing`             |Performs a "starts with" search (issue #273)|
 |Token                  |`:below`,`:not`,`:missing`      |Performs an exact match search|
 |Number                 |`:missing`                      |Honors prefix if present, otherwise performs an exact match search|
 |Date                   |`:missing`                      |Honors prefix if present, otherwise performs an exact match search|
@@ -148,6 +161,6 @@ Similar to Numeric searches, the FHIR Server does not compute an implicit range 
 URI searches on the IBM FHIR Server are case-insensitive, similar to the default behavior of searching on string values.
 
 ## HL7 FHIR R4 (v4.0.0) errata
-We will add information here as we find issues with the artifacts provided with this version of the specification.
+We add information here as we find issues with the artifacts provided with this version of the specification.
 
 FHIR® is the registered trademark of HL7 and is used with the permission of HL7.
