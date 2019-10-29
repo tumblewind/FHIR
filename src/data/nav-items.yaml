@@ -14,11 +14,11 @@
       path: /guides/FHIRServerUsersGuide
     - title: FHIR Model Guide
       path: /guides/FHIRModelGuide
-    - title: Creating the fhir-validation assembly
+    - title: fhir-validation create assembly
       path: /guides/CreateFHIRValidationAssembly
-    - title: Configuring IBM FHIR Server Search
+    - title: fhir-search configuration
       path: /guides/FHIRSearchConfiguration 
-    - title: DB2 Guide
+    - title: Setup DB2
       path: /guides/DB2OnCloudSetup
 - title: Tips and Tricks
   pages:

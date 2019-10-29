@@ -66,7 +66,7 @@ The `_total`, `_contained`, and `_containedType` parameters are not supported at
 ### Custom search parameters
 Custom search parameters are search parameters that are not defined in the FHIR R4 specification, but are configured for search on the IBM FHIR Server. You can configure custom parameters for either extension elements or for elements that are defined in the specification but without a corresponding search parameter.
 
-For information on how to specify custom search parameters, see [FHIRSearchConfiguration.md](FHIRSearchConfiguration.md).
+For information on how to specify custom search parameters, see [FHIRSearchConfiguration.md](https://ibm.github.io/FHIR/guides/FHIRSearchConfiguration).
 
 ### Search modifiers
 FHIR search modifiers are described at https://www.hl7.org/fhir/R4/search.html#modifiers and vary by search parameter type. The IBM FHIR Server implements a subset of the spec-defined search modifiers that is defined in the following table:
