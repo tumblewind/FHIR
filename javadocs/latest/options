@@ -26,7 +26,7 @@
 -doctitle
 'IBM FHIR Server 4.0.0-SNAPSHOT API'
 -header
-'<a href="/FHIR" class="bx--header__name"><span>IBM</span>&nbsp;FHIR®&nbsp;Server</a>'
+'<a href="/FHIR" class="bx--header__name" target="_parent"><span>IBM</span>&nbsp;FHIR®&nbsp;Server</a>'
 -linkoffline
 'https://docs.oracle.com/javase/8/docs/api' '/Users/paulbastide/git/wffh/FHIR/fhir-parent/target/javadoc-bundle-options'
 -nodeprecated
