@@ -1,1 +1,0 @@
-/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/javadoc -J-Xmx1024m -J-Xms512m @options @packages
