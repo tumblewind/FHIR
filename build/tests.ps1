@@ -3,17 +3,11 @@
 # 
 # SPDX-License-Identifier: Apache-2.0
 ###############################################################################
-
+$ErrorActionPreference = 'Stop'
 Write-Host 'Performing Tests'
-& mvn -B test -DskipTests=false -f .\fhir-server-test\pom.xml -DskipWebSocketTest=true --log-file out.log --no-transfer-progress
+$PROC = Start-Process -FilePath "mvn.cmd" -ArgumentList "-B test -DskipTests=false -f .\fhir-server-test\pom.xml -DskipWebSocketTest=true --no-transfer-progress" -PassThru
+Wait-Process -InputObject $PROC
 
-If ( (Get-Content out.log -Tail 10 | Select-String -pattern "BUILD SUCCESS").Length > 0) {
-    Write-Host 'Performing Tests - Success'
-    exit 0
-} else { 
-    Write-Host 'Performing Tests - Fail'
-    cat out.log
-    exit -1
-}
-
+Write-Host "Exit Code is " $PROC.ExitCode
+exit $PROC.ExitCode
 # End of Script
